@@ -1,0 +1,104 @@
+.curved {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+}
+
+.curved::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #6fbbb5;
+  height: 24%;
+}
+.background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #00c7fc, #d357fe);
+  display: flex;
+  flex-grow: 1;
+  z-index: -1;
+}
+
+.background div {
+  position: absolute;
+  border-radius: 100%;
+  height: 0;
+  filter: blur(240vw);
+  opacity: 0.4;
+}
+
+.background div:nth-child(1) {
+  background: linear-gradient(132deg, #1FCFC3 0.00%, #1F91CF 100.00%);
+  width: 30%;
+  padding-top: 30%;
+  left: 20%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(2) {
+  background: linear-gradient(132deg, #0800FF 0.00%, #E32BE3 100.00%);
+  width: 40%;
+  padding-top: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(3) {
+  background: linear-gradient(132deg, #1FCFC3 0.00%, #1F91CF 100.00%);
+  width: 30%;
+  padding-top: 30%;
+  left: 80%;
+  top: 80%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(4) {
+  background: linear-gradient(132deg, #5ea3d0 0.00%, #420b0b 100.00%);
+  width: 17%;
+  padding-top: 17%;
+  left: 88%;
+  top: 78%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(5) {
+  background: linear-gradient(132deg, #665fd8 0.00%, #e212d1 100.00%);
+  width: 37%;
+  padding-top: 37%;
+  left: 35%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(6) {
+  background: linear-gradient(132deg, #bc2cef 0.00%, #c7b143 100.00%);
+  width: 18%;
+  padding-top: 18%;
+  left: 5%;
+  top: 49%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(7) {
+  background: linear-gradient(132deg, #e43b9d 0.00%, #3188a1 100.00%);
+  width: 69%;
+  padding-top: 69%;
+  left: 10%;
+  top: 27%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav {
+  margin-left: 50%;
+  margin-right: 50%;
+}

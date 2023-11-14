@@ -1,0 +1,61 @@
+/*Polices*/
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+section {
+	min-height: 100vh;
+	max-height: auto;
+}
+
+.profil:hover {
+	animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.imageseparation1 {
+	background-image: url(../img/pexels-oleksandr-pidvalnyi-345522.jpg);
+	height: 40vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.imageseparation2 {
+	background-image: url(../img/pexels-tomáš-malík-3022417.jpg);
+	height: 40vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.imageseparation3 {
+	background-image: url(../img/pexels-ludvig-hedenborg-3753160.jpg);
+	height: 40vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.navbar-brand {
+	font-family: "", sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.progress {
+	height: 30px;
+}
+
+.competences {
+	max-width: 80%;
+}
