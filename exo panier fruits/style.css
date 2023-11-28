@@ -1,0 +1,17 @@
+.txt {
+  margin-left: 70px;
+}
+
+.liste {
+  border: 2px solid;
+  width: 30vw;
+  margin-left: 70px;
+}
+
+.panier {
+  border: 2px solid;
+  margin-left: 50vw;
+  margin-top: -80px;
+  width: 30vw;
+  height: 11vh;
+}
