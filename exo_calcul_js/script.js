@@ -1,8 +1,11 @@
-function calcul() {
+const formulaire = document.querySelector("form");
+
+// Écouteur d'événement pour la soumission du formulaire
+formulaire.addEventListener("submit", function (event) {
+	event.preventDefault();
+
 	//saisie utilisateur
 	var volume = parseFloat(document.getElementById("volume").value);
-
-	//variables
 	var zone = parseFloat(document.getElementById("zone").value);
 	var isolation = parseFloat(document.getElementById("isolation").value);
 	var nord = parseFloat(document.getElementById("nord").checked ? document.getElementById("nord").value : 0);
@@ -13,10 +16,7 @@ function calcul() {
 
 	var resultatCalcul = (volume + zone + isolation + nord + habitation + temperature + altitude + sdb) / 0.18;
 
-	// Afficher le résultat
-	document.getElementById("resultatCalcul").innerText = "Résultat du calcul : " + resultatCalcul;
-}
-
-document.getElementById("calculButton").addEventListener("click", function () {
-	calcul();
+	// Affichage du résultat dans la balise <p id="resultat">
+	var resultat = document.getElementById("resultat");
+	resultat.value = resultatCalcul;
 });

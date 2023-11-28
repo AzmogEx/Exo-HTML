@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 		<title>Exo_Calcul_radiateur</title>
 	</head>
 	<body>
@@ -35,14 +34,14 @@
 				</div>
 				<div class="row mt-2">
 					Type d'habitation:
-					<select id="typeHabitat" size="1" id="habitation">
+					<select id="habitation">
 						<option value="0">Maison</option>
 						<option value="-10">Appartement</option>
 					</select>
 				</div>
 				<div class="row mt-2">
 					Température:
-					<select id="temp" size="1" id="temperature">
+					<select size="1" id="temperature">
 						<option value="-10">18°</option>
 						<option value="0">20°</option>
 						<option value="10">22°</option>
@@ -50,7 +49,7 @@
 				</div>
 				<div class="row mt-2">
 					Altitude:
-					<select id="altitude" size="1" id="altitude">
+					<select size="1" id="altitude">
 						<option value="0">0 à 500m</option>
 						<option value="10">1000</option>
 						<option value="20">1000 à 1500</option>
@@ -60,9 +59,11 @@
 					<input class="form-check-input" type="checkbox" value="10" id="sdb" />
 					<label class="form-check-label" for="flexCheckDefault"> Salle de bain </label>
 				</div>
-				<button id="calculButton">Calcul</button>
-				<p id="resultatCalcul"></p>
+				<button id="calculButton" type="submit">Calcul</button>
+				<input id="resultat" />
 			</div>
 		</form>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
